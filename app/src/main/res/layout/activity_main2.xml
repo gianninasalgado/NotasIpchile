@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.giannina.ipchile.Main2Activity"
+    android:baselineAligned="false"
+    android:background="#EDE7F6">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR NOTAS"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#1C1C1C"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="EPR1:"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/epr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:maxLength="3"
+        android:layout_below="@+id/textView39"
+        android:layout_alignRight="@+id/textView40"
+        android:layout_alignEnd="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EPE1:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/epe1"
+        android:layout_alignBottom="@+id/epe1"
+        android:layout_alignRight="@+id/textView24"
+        android:layout_alignEnd="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/epe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:maxLength="3"
+        android:textColor="#000000"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:layout_alignBaseline="@+id/epr1"
+        android:layout_alignBottom="@+id/epr1"
+        android:layout_alignLeft="@+id/epe2"
+        android:layout_alignStart="@+id/epe2" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EPR2:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/epr2"
+        android:layout_alignBottom="@+id/epr2"
+        android:layout_alignLeft="@+id/textView31"
+        android:layout_alignStart="@+id/textView31" />
+
+    <EditText
+        android:id="@+id/epr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:textColor="#000000"
+        android:maxLength="3"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/epr1"
+        android:layout_alignLeft="@+id/epr1"
+        android:layout_alignStart="@+id/epr1" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EPE2:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/epe2"
+        android:layout_alignBottom="@+id/epe2"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/epe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:inputType="textPersonName"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:textColor="#000000"
+        android:layout_below="@+id/epe1"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Calcular notas"
+        android:background="#311B92"
+        android:layout_below="@+id/promedio"
+        android:layout_alignRight="@+id/btn_calculoFinal"
+        android:layout_alignEnd="@+id/btn_calculoFinal" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="VOLVER"
+        android:background="#311B92"
+        android:layout_alignBottom="@+id/btn_calculoFinal"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLEMNES"
+        android:textStyle="bold"
+        android:textSize="35px"
+        android:textColor="#1C1C1C"
+        android:hint="EPR1"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/btn_volver"
+        android:layout_alignStart="@+id/btn_volver" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACUMULATIVAS"
+        android:textColor="#1C1C1C"
+        android:textStyle="bold"
+        android:textSize="35px"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/epr2"
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVA1:"
+        android:textColor="#000000"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView40"
+        android:layout_alignLeft="@+id/textView40"
+        android:layout_alignStart="@+id/textView40" />
+
+    <EditText
+        android:id="@+id/eva1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:layout_alignBaseline="@+id/textView41"
+        android:layout_alignBottom="@+id/textView41"
+        android:layout_alignRight="@+id/textView40"
+        android:layout_alignEnd="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVA2:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/eva1"
+        android:layout_alignBottom="@+id/eva1"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34" />
+
+    <EditText
+        android:id="@+id/eva2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:layout_alignBaseline="@+id/textView42"
+        android:layout_alignBottom="@+id/textView42"
+        android:layout_alignLeft="@+id/epe2"
+        android:layout_alignStart="@+id/epe2" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVA3:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/eva3"
+        android:layout_alignBottom="@+id/eva3"
+        android:layout_alignLeft="@+id/textView41"
+        android:layout_alignStart="@+id/textView41" />
+
+    <EditText
+        android:id="@+id/eva3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:layout_below="@+id/eva1"
+        android:layout_alignLeft="@+id/eva1"
+        android:layout_alignStart="@+id/eva1" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVA4:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/eva4"
+        android:layout_alignBottom="@+id/eva4"
+        android:layout_alignLeft="@+id/textView42"
+        android:layout_alignStart="@+id/textView42" />
+
+    <EditText
+        android:id="@+id/eva4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:maxLength="3"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:layout_below="@+id/eva2"
+        android:layout_alignLeft="@+id/eva2"
+        android:layout_alignStart="@+id/eva2" />
+
+
+
+    <EditText
+        android:id="@+id/promedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/eva3"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTA PRESENTACIÓN:"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/promedio"
+        android:layout_alignBottom="@+id/promedio"
+        android:layout_alignLeft="@+id/textView43"
+        android:layout_alignStart="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NECESITAS EN EXAMEN:"
+        android:textColor="#1C1C1C"
+        android:layout_alignBottom="@+id/btn_Calcular"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/examen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:enabled="false"
+        android:textColor="#1C1C1C"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/promedio"
+        android:layout_alignStart="@+id/promedio" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTA EXAMEN:"
+        android:textColor="#000000"
+        android:layout_below="@+id/examen"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:id="@+id/notaExamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:textColor="#000000"
+        android:inputType="textPersonName"
+        android:maxLength="3"
+        android:hint="1.0"
+        android:textColorHint="#585858"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROMEDIO FINAL:"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignBaseline="@+id/promedioFinal"
+        android:layout_alignBottom="@+id/promedioFinal"
+        android:layout_toRightOf="@+id/notaExamen"
+        android:layout_toEndOf="@+id/notaExamen" />
+
+    <EditText
+        android:id="@+id/promedioFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/notaExamen"
+        android:layout_alignBottom="@+id/notaExamen"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn_calculoFinal"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Calcular Exámen"
+        android:background="#311B92"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
